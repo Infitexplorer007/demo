@@ -1,10 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI;
-
-if (!MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable in .env.local');
-}
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/bk-marketing-fallback';
 
 // Cache the connection across hot-reloads in dev (Next.js dev server issue)
 let cached = global.mongoose;
