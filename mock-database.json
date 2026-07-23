@@ -1,0 +1,137 @@
+{
+  "products": [
+    {
+      "_id": "1",
+      "name": "Industrial Steel",
+      "category": "Steel",
+      "manufacturer": "Apex Steel Corp",
+      "description": "Premium structural steel for industrial construction projects.",
+      "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+      "price": null,
+      "tags": [
+        "Raw Material",
+        "ISO Certified"
+      ],
+      "featured": true,
+      "active": true,
+      "createdAt": "2026-07-11T08:46:48.673Z"
+    },
+    {
+      "_id": "2",
+      "name": "Heavy Duty Pumps",
+      "category": "Machinery",
+      "manufacturer": "HydroFlow Dynamics",
+      "description": "High-capacity pumps designed for demanding industrial environments.",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "price": 25000,
+      "tags": [
+        "Heavy Duty",
+        "Industrial"
+      ],
+      "featured": true,
+      "active": true,
+      "createdAt": "2026-07-11T08:46:48.691Z",
+      "inStock": true,
+      "updatedAt": "2026-07-11T16:44:46.469Z"
+    },
+    {
+      "_id": "3",
+      "name": "Industrial Valves",
+      "category": "Industrial Equipment",
+      "manufacturer": "Precision Flow",
+      "description": "Precision-engineered valves to regulate flow safely.",
+      "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&q=80",
+      "price": null,
+      "tags": [
+        "Precision",
+        "High Pressure"
+      ],
+      "featured": false,
+      "active": true,
+      "createdAt": "2026-07-11T08:46:48.691Z"
+    },
+    {
+      "_id": "4",
+      "name": "Portland Cement OPC 53",
+      "category": "Construction",
+      "manufacturer": "UltraTech Cement",
+      "description": "Ordinary Portland Cement Grade 53 for RCC construction.",
+      "image": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&q=80",
+      "price": 420,
+      "tags": [
+        "OPC 53",
+        "Bulk"
+      ],
+      "featured": true,
+      "active": true,
+      "createdAt": "2026-07-11T08:46:48.691Z"
+    },
+    {
+      "name": "industrial pumps",
+      "category": "Steel",
+      "manufacturer": "apex stell manufactures",
+      "description": "best quality pumps",
+      "image": "https://tse4.mm.bing.net/th/id/OIP.E1cm8M38cKSWtos8jGPMIgHaFJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+      "price": 7000,
+      "tags": [
+        "steel"
+      ],
+      "featured": false,
+      "active": true,
+      "_id": "4sudgdnf",
+      "createdAt": "2026-07-11T13:11:14.103Z"
+    }
+  ],
+  "quotations": [
+    {
+      "id": "i02aa5rn",
+      "customer_name": "Aditya",
+      "customer_email": "Aditya2007@gmail.com",
+      "company": "",
+      "products": [
+        {
+          "id": "2",
+          "name": "Heavy Duty Pumps"
+        },
+        {
+          "id": "3",
+          "name": "Industrial Valves"
+        },
+        {
+          "id": "4",
+          "name": "Portland Cement OPC 53"
+        }
+      ],
+      "message": "please reduce the amount",
+      "created_at": "2026-07-11T08:48:11.208Z"
+    },
+    {
+      "id": "nk0e25n7",
+      "customer_name": "ADITYA G",
+      "customer_email": "Adityagnanavel2007@gmail.com",
+      "company": "",
+      "products": [
+        {
+          "id": "3",
+          "name": "Industrial Valves"
+        }
+      ],
+      "message": "please reduce the price",
+      "created_at": "2026-07-11T13:06:16.833Z"
+    },
+    {
+      "id": "sraqj05h",
+      "customer_name": "adi",
+      "customer_email": "adi@gmail.com",
+      "company": "",
+      "products": [
+        {
+          "id": "2",
+          "name": "Heavy Duty Pumps"
+        }
+      ],
+      "message": "low price",
+      "created_at": "2026-07-11T13:14:25.984Z"
+    }
+  ]
+}

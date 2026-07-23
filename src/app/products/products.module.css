@@ -1,0 +1,172 @@
+.page {
+  min-height: 100vh;
+  background: #fafafa;
+  padding-bottom: 80px;
+}
+
+/* ── Page header ── */
+.pageHeader {
+  background: #111827;
+  color: #fff;
+  text-align: center;
+  padding: 72px 24px 64px;
+}
+
+.eyebrow {
+  color: #f97316;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dashes {
+  letter-spacing: -0.1em;
+}
+
+.title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Main container ── */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* ── Database Error ── */
+.dbError {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.dbError h3 {
+  color: #991b1b;
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+}
+
+.dbError p {
+  color: #b91c1c;
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.dbError ol {
+  color: #7f1d1d;
+  margin: 0 0 16px;
+  padding-left: 24px;
+}
+
+.dbError li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.dbError a {
+  color: #1d4ed8;
+  font-weight: bold;
+}
+
+.errorText {
+  font-family: monospace;
+  font-size: 0.8rem !important;
+  color: #ef4444 !important;
+  background: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #fecaca;
+}
+
+/* ── Loading skeleton ── */
+.skeletonGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 1199px) {
+  .skeletonGrid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 899px) {
+  .skeletonGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 479px) {
+  .skeletonGrid { grid-template-columns: 1fr; }
+}
+
+.skeleton {
+  height: 320px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0 }
+  100% { background-position: -200% 0 }
+}
+
+/* ── Floating Cart Button ── */
+.cartFab {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #111827;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.cartFab:hover {
+  background: #c81e1e;
+  transform: scale(1.08);
+}
+
+.cartBadge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #c81e1e;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
